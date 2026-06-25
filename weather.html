@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherWise</title>
+
+    <link rel="stylesheet" href="weather.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="background-blur blur1"></div>
+    <div class="background-blur blur2"></div>
+
+    <div class="container">
+
+        <div class="top-section">
+
+            <div>
+                <h3 id="greeting">Good Evening</h3>
+                <h1>WeatherWise</h1>
+            </div>
+
+            <div class="clock" id="clock">
+                00:00
+            </div>
+
+        </div>
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search a city..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <button id="locationBtn">
+                My Location
+            </button>
+
+        </div>
+
+        <div class="weather-card">
+
+            <div class="city-name" id="cityName">
+                Search for a city
+            </div>
+
+            <div class="weather-icon">
+                <img id="weatherIcon" src="" alt="">
+            </div>
+
+            <div class="temperature" id="temperature">
+                --
+            </div>
+
+            <div class="condition" id="condition">
+                Weather Condition
+            </div>
+
+            <div class="details">
+
+                <div class="detail-box">
+                    <span>Feels Like</span>
+                    <h3 id="feelsLike">--</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>Humidity</span>
+                    <h3 id="humidity">--</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>Wind</span>
+                    <h3 id="wind">--</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Built by Neha
+        </div>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="weather.js"></script>
+
+</body>
+</html>
